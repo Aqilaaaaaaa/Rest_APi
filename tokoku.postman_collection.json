@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "93ad5998-3759-474f-a220-87dc57658668",
+		"name": "TES ASPRAK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18855075"
+	},
+	"item": [
+		{
+			"name": "API",
+			"item": [
+				{
+					"name": "Health Check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "tefa-exam-ch1.denipanjid.local",
+							"host": [
+								"tefa-exam-ch1",
+								"denipanjid",
+								"local"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Buku",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8036/v1/reservations/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "8036",
+							"path": [
+								"v1",
+								"reservations",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Buku",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8036/v1/reservations",
+							"host": [
+								"localhost"
+							],
+							"port": "8036",
+							"path": [
+								"v1",
+								"reservations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Buku",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Backend Introduction\",\n    \"subtitle\": \"Learn what to do and what to be expected as a Backend Engineer\",\n    \"content\": \"lorem ipsum dolor\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8036/v1/reservations",
+							"host": [
+								"localhost"
+							],
+							"port": "8036",
+							"path": [
+								"v1",
+								"reservations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Buku",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Backend Introduction\",\n    \"subtitle\": \"Learn what to do and what to be expected as a Backend Engineer\",\n    \"content\": \"lorem ipsum dolor\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8036/v1/reservations/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "8036",
+							"path": [
+								"v1",
+								"reservations",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One Buku",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
